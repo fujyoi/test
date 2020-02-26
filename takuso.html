@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        {% include '_head.html' %}
+    </head>
+    <body>
+        {% include '_main_head.html' %}
+                {% include '_dokan_jigyosha_list.html' %}
+                {% include '_upload.html' %}
+                {% include '_search_condition.html' %}
+
+            <!-- データ部 -->
+            <table class="dataTbl row-group" id="dataTable" style="margin: 0 auto;font-size: small; margin-bottom: 30px;">
+              <thead>
+              <tr>
+                <th width="140">報告日時</th>
+                <th width="166">託送供給契約番号</th>
+                <th width="400">供給地点特定番号</th>
+                <th width="280">現小売事業者</th>
+                <th width="80" rowspan="2">取込結果</th>
+                </tr>
+                <tr>
+                <th colspan="2">申込時点氏名</th>
+                <th colspan="2">申込時点住所</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        {% include '_main_foot.html' %}
+
+        {% include '_flash_message.html' %}
+        {% include '_foot.html' %}
+        
+        <script src="/static/jQueryRotate.js"></script>
+        <script src="/static/scrollLogo.js"></script>
+        <script src="/static/common.js"></script>
+        <script src="/static/takuso.js"></script>
+
+    </body>
+</html>
